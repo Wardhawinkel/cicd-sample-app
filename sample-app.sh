@@ -3,15 +3,15 @@ set -euo pipefail
 
 FILE1=tempdir/templates
 FILE2=tempdir/static
-if [ ! -f "tempdir" ]; then
+if [ ! -d "tempdir" ]; then
     mkdir tempdir
 fi
 
-if [ ! -f "$FILE1" ]; then
+if [ ! -d "$FILE1" ]; then
     mkdir tempdir/templates
 fi
 
-if [ ! -f "$FILE2" ]; then
+if [ ! -d "$FILE2" ]; then
     mkdir tempdir/static
 fi
 
